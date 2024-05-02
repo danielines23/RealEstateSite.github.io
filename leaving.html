@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linz Real Estate</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header img {
+      max-height: 80px;
+      margin-right: 1rem;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      bottom: -3px;
+      border-radius: 5px;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    nav a.active::after {
+      opacity: 1;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding-bottom: 100px; /* Adds space at the bottom */
+    }
+
+    /* Form Wrapper for Controlling Width and Spacing */
+    .form-wrapper {
+      max-width: 600px; /* Adjust the width as needed */
+      margin: 0 auto; /* Centers the form in the section */
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      border-radius: 8px;
+    }
+
+    /* Form Container Styles */
+    .form-container {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px; /* Adjust label font size for better readability */
+    }
+
+    input[type="date"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="submit"] {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .form-container input[type="submit"] {
+      background: #444;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-instructions {
+      text-align: center;
+      font-style: italic;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="linz-real-estate-ithaca.jpeg" alt="Logo or Image">
+    <div>
+      <h1>Linz Real Estate - The HouseSOLD Name in Ithaca</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="home.html">Home Page</a>
+    <a href="about.html">About Me</a>
+    <a href="start.html">Start Here</a>
+    <a href="buyers.html">Buyer's Checklist</a>
+    <a href="leaving.html" class="active">Leaving Ithaca</a>
+    <a href="ithaca.html">About Ithaca</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <div class="form-wrapper">
+    <h1>LEAVING THE ITHACA AREA?</h1>
+    <h2>I can help you relocate!</h2>
+    <form method="post" action="leaving_ithaca_emailer_html.php">
+      <div class="form-container">
+        <label>FIRST NAME<br>
+          <input name="first_name" size="40" maxlength="80" type="text">
+        </label>
+        <label>LAST NAME<br>
+          <input name="last_name" size="40" maxlength="80" type="text">
+        </label>
+        <label>EMAIL ADDRESS<br>
+          <input name="email" size="40" maxlength="80" type="text">
+        </label>
+        <label>PHONE NUMBER<br>
+          <input name="phone" size="40" maxlength="80" type="text">
+        </label>
+        <label>NEW CITY, STATE, ZIP CODE<br>
+          <input name="city_state_zip" size="40" maxlength="80" type="text">
+        </label>
+        <label>APPROXIMATE DATE OF MOVE<br>
+          <input name="move_date" type="date">
+        </label>
+        <input type="submit" value="SUBMIT">
+      </div>
+    </form>
+    <p class="form-instructions">
+      Fill in all the information on this form. When you're done, hit the SUBMIT button to send this request to Lindsay and a copy will be sent to your email address.
+    </p>
+    </div>
+  </section>
+  <footer>
+    LICENSED REAL ESTATE BROKER | 607-227-7456 | LINZREALESTATE.COM | &copy; 2023 Linz Real Estate. All rights reserved.
+  </footer>
+</body>
+
+</html>

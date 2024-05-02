@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linz Real Estate</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header img {
+      max-height: 80px;
+      margin-right: 1rem;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      bottom: -3px;
+      border-radius: 5px;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    nav a.active::after {
+      opacity: 1;
+    }
+
+    section {
+      padding: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .form-box {
+
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    label {
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form {
+      align-items: left;
+      justify-content: left;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="linz-real-estate-ithaca.jpeg" alt="Logo or Image">
+    <div>
+      <h1>Linz Real Estate - The HouseSOLD Name in Ithaca</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="home.html">Home Page</a>
+    <a href="about.html">About Me</a>
+    <a href="start.html" class="active">Start Here</a>
+    <a href="buyers.html">Buyer's Checklist</a>
+    <a href="leaving.html">Leaving Ithaca</a>
+    <a href="ithaca.html">About Ithaca</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Let Lindsay Know What You Want in Your New Home</h2>
+
+    <!-- New Form Grid -->
+    <div class="form-grid">
+      <div class="form-box">
+        <h3>Price</h3>
+        <form>
+          <input type="checkbox" id="option1" name="option1" value="option1">
+          <label for="option1">$0 - $100k</label><br>
+
+          <input type="checkbox" id="option2" name="option2" value="option2">
+          <label for="option2">$100k - $200k</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">$200k - $300k</label><br>
+
+          <input type="checkbox" id="option4" name="option4" value="option4">
+          <label for="option4">$300k - $400k</label><br>
+
+          <input type="checkbox" id="option5" name="option5" value="option5">
+          <label for="option5">$400k plus</label><br>
+        </form>
+      </div>
+      <div class="form-box">
+        <h3>Style</h3>
+        <form>
+          <input type="checkbox" id="option1" name="option1" value="option1">
+          <label for="option1">Cape Cod</label><br>
+
+          <input type="checkbox" id="option2" name="option2" value="option2">
+          <label for="option2">2 Story</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">Bungalow</label><br>
+
+          <input type="checkbox" id="option4" name="option4" value="option4">
+          <label for="option4">Colonial</label><br>
+
+          <input type="checkbox" id="option5" name="option5" value="option5">
+          <label for="option5">Contemporary</label><br>
+
+          <input type="checkbox" id="option5" name="option5" value="option5">
+          <label for="option5">Craftsman</label><br>
+
+          <input type="checkbox" id="option5" name="option5" value="option5">
+          <label for="option5">Federal</label><br>
+
+          <input type="checkbox" id="option5" name="option5" value="option5">
+          <label for="option5">Italianate</label><br>
+        </form>
+      </div>
+
+      <div class="form-box">
+        <h3>Size</h3>
+        <form>
+          <input type="checkbox" id="option1" name="option1" value="option1">
+          <label for="option1">Under 1000 sq ft</label><br>
+
+          <input type="checkbox" id="option2" name="option2" value="option2">
+          <label for="option2">1000 - 2000 sq ft</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">2000 - 3000 sq ft</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">3000 - 4000 sq ft</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">Over 4000 sq ft</label><br>
+
+        </form>
+      </div>
+
+      <div class="form-box">
+        <h3>Acreage</h3>
+        <form>
+          <input type="checkbox" id="option1" name="option1" value="option1">
+          <label for="option1">1 acre or less</label><br>
+
+          <input type="checkbox" id="option2" name="option2" value="option2">
+          <label for="option2">1 to 2 acres</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">3 to 10 acres</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">10 to 50 acres</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="option3">
+          <label for="option3">50 - 100 acres</label><br>
+
+        </form>
+      </div>
+
+      <div class="form-box">
+        <h3>Baths</h3>
+        <form>
+          <label for="select1">Select 1:</label>
+          <select id="select1" name="select1">
+            <option value="option1">One</option>
+            <option value="option2">Two</option>
+            <option value="option3">Three</option>
+            <option value="option3">Four</option>
+          </select>
+        </form>
+      </div>
+
+      <!-- Repeat the form-box div with different content for the other grid boxes -->
+      <!-- You can copy the form-box div and its content for each box in the grid -->
+
+    </div>
+    <!-- End of Form Grid -->
+
+    <!-- Single Submit Button -->
+    <button type="submit">Submit</button>
+    <br><br>
+  </section>
+
+  <footer>
+    LICENSED REAL ESTATE BROKER | 607-227-7456 | LINZREALESTATE.COM | &copy; 2023 Linz Real Estate. All rights reserved.
+  </footer>
+</body>
+
+</html>

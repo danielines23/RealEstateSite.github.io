@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linz Real Estate</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header img {
+      max-height: 80px;
+      margin-right: 1rem;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      bottom: -3px;
+      border-radius: 5px;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    nav a.active::after {
+      opacity: 1;
+    }
+
+    section {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="linz-real-estate-ithaca.jpeg" alt="Logo or Image">
+    <div>
+      <h1>Linz Real Estate - The HouseSOLD Name in Ithaca</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="home.html">Home Page</a>
+    <a href="about.html">About Me</a>
+    <a href="start.html">Start Here</a>
+    <a href="buyers.html">Buyer's Checklist</a>
+    <a href="leaving.html">Leaving Ithaca</a>
+    <a href="ithaca.html" class="active">About Ithaca</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>About Ithaca</h2>
+    <p>
+      <strong>What Ithaca Has to Offer</strong><br>
+      As a real estate broker and someone who grew up in Ithaca, I hope to share my experiences and insights into the
+      Ithaca community.<br>
+      <em>Photos of Ithaca, New York</em><br>
+      The Ithaca area is known for its cosmopolitan atmosphere and natural beauty. Where else can you drive five minutes
+      or walk down the street and have the privilege of enjoying Nature's magnificent wonders right in our backyard?
+    </p>
+  </section>
+
+  <footer>
+    LICENSED REAL ESTATE BROKER | 607-227-7456 | LINZREALESTATE.COM | &copy; 2023 Linz Real Estate. All rights reserved.
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linz Real Estate</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header img {
+      max-height: 80px;
+      margin-right: 1rem;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      bottom: -3px;
+      border-radius: 5px;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    nav a.active::after {
+      opacity: 1;
+    }
+
+    ul, li {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* List Styles */
+    ul {
+      margin: 10px 0;
+    }
+
+    li {
+      background: #eee;
+      margin-bottom: 5px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    li a {
+      color: #06c;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    li.required {
+      background: #dff0d8; /* Light green background for required items */
+      border-left: 4px solid #3c763d; /* Green border for emphasis */
+    }
+
+    li.optional {
+      background: #fcf8e3; /* Light yellow background for optional items */
+      border-left: 4px solid #8a6d3b; /* Yellow border for emphasis */
+    }
+
+    li.required a,
+    li.optional a {
+      color: #337ab7; /* Standard link color */
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="linz-real-estate-ithaca.jpeg" alt="Logo or Image">
+    <div>
+      <h1>Linz Real Estate - The HouseSOLD Name in Ithaca</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="home.html">Home Page</a>
+    <a href="about.html">About Me</a>
+    <a href="start.html">Start Here</a>
+    <a href="buyers.html" class="active">Buyer's Checklist</a>
+    <a href="leaving.html">Leaving Ithaca</a>
+    <a href="ithaca.html">About Ithaca</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Buying a Home in Ithaca</h2>
+    <p>Buying a home in Ithaca? Things to do: looking at property, signing and accepting an offer, mortgage process, a week before closing, and the day of closing.</p>
+
+    <!-- First Contact and Before Looking at any Property -->
+    <h3>First Contact and Before Looking at any Property</h3>
+    <ul>
+      <li><input type="checkbox" name="CL1" /><a href="/forms/agency_disclosure_2010.pdf">New York State Agency Disclosure Form</a></li>
+      <li><input type="checkbox" name="CL1b" /><a href="/forms/anti-discrimination-2020.pdf">New York State Housing and Anti-Discrimination Disclosure Form</a></li>
+    </ul>
+
+    <!-- Before Signing an Offer -->
+    <h3>Before Signing an Offer</h3>
+    <ul>
+      <li class="required"><input type="checkbox" name="CL2" /><a href="/forms/sellerdisc.pdf">Property Condition Disclosure Form (Required)</a></li>
+      <li class="optional">Agricultural District Disclosure (Optional)</li>
+      <li class="optional">Utility Surcharge Disclosure (Optional)</li>
+      <li class="optional">Lead Paint Disclosure (Optional)</li>
+      <li class="optional">Write a Deposit Check (Optional)</li>
+    </ul>
+
+    <!-- After Offer is Accepted -->
+    <h3>After Offer is Accepted</h3>
+    <ul>
+      <li><input type="checkbox" name="CL8" /> Deposit Check is Deposited into Escrow</li>
+      <li><input type="checkbox" name="CL9" /> Fax Accepted Offer to the Buyer's Attorneys</li>
+      <li><input type="checkbox" name="CL10" /> Get the Attorney's approval</li>
+      <li><input type="checkbox" name="CL11" /> Schedule the Structural Inspection and the Radon Test</li>
+      <li><input type="checkbox" name="CL12" /> Complete the Structural Inspection and the Radon Test</li>
+      <li><input type="checkbox" name="CL13" /> Renegotiate if Needed</li>
+      <li><input type="checkbox" name="CL14" /> Remove the Structural and Radon Contingencies</li>
+    </ul>
+
+    <!-- Mortgage Process -->
+    <h3>Mortgage Process</h3>
+    <ul>
+      <li><input type="checkbox" name="CL15" /> Application</li>
+      <li><input type="checkbox" name="CL16" /> Appraisal</li>
+      <li><input type="checkbox" name="CL17" /> Commitment</li>
+    </ul>
+
+    <h3>A Week Before Closing</h3>
+    <ul>
+      <li><input type="checkbox" name="CL18" /> Call <a target="_blank" href="http://www.nyseg.com/">NYSEG</a></li>
+      <li><input type="checkbox" name="CL19" /> Call <a target="_blank" href="http://www.boltonpoint.org/">Bolton Point Water</a></li>
+      <li><input type="checkbox" name="CL20" /> Call Oil/Propane Supplier
+        <ul>
+          <li><a target="_blank" href="http://www.ehrhartenergy.com/">Ehrhart Energy</a></li>
+          <li><a target="_blank" href="http://www.mirabito.com/">Mirabito</a></li>
+          <li><a target="_blank" href="http://www.suburbanpropane.com/">Suburban Propane</a></li>
+        </ul>
+      </li>
+      <li><input type="checkbox" name="CL21" /> Arrange for Homeowners Insurance
+        <ul>
+          <li><a target="_blank" href="http://www.andrewsagencyinsurance.com/">Andrews Agency</a></li>
+          <li><a target="_blank" href="http://www.baileyplace.com/">Bailey Place</a></li>
+          <li><a target="_blank" href="http://www.carmodyinsurance.com/">The Carmody Agency, Inc.</a></li>
+          <li><a target="_blank" href="http://www.drydenmutual.com/">Dryden Mutual</a></li>
+          <li><a target="_blank" href="http://www.larkininsurance.com/">Larkin Insurance</a></li>
+          <li><a target="_blank" href="http://www.libertymutual.com/">Liberty Mutual</a></li>
+          <li><a target="_blank" href="http://www.securitymutual.com/">Security Mutual</a></li>
+          <li><a target="_blank" href="http://www.statefarm.com/">State Farm Insurance</a></li>
+          <li><a target="_blank" href="http://www.tompkinsins.com/">Tompkins Insurance Agencies</a></li>
+        </ul>
+      </li>
+      <li><input type="checkbox" name="CL22" /> Arrange for Trash, Phone & TV
+        <ul>
+          <li><a target="_blank" href="http://www.casella.com/">Casella</a></li>
+          <li><a target="_blank" href="http://www.dougstrash.com/">Doug's Trash Removal</a></li>
+          <li><a target="_blank" href="http://www.frontier.com/">Frontier Communications</a></li>
+          <li><a target="_blank" href="http://www.ontariotel.com/">Trumansburg Telephone</a></li>
+          <li><a target="_blank" href="http://www.lightlink.com/">Lightlink Wireless</a></li>
+          <li><a target="_blank" href="http://www.vonage.com/">Vonage</a></li>
+          <li><a target="_blank" href="http://www.timewarnercable.com/">Time Warner Cable / Spectrum</a></li>
+          <li><a target="_blank" href="http://www.directv.com/">Direct TV</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Day of Closing -->
+    <h3>Day of Closing</h3>
+    <ul>
+      <li><input type="checkbox" name="CL23" /> A Final Walk Through</li>
+    </ul>
+  </section>
+
+
+  <footer>
+    LICENSED REAL ESTATE BROKER | 607-227-7456 | LINZREALESTATE.COM | &copy; 2023 Linz Real Estate. All rights reserved.
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linz Real Estate</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header img {
+      max-height: 80px;
+      margin-right: 1rem;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      bottom: -3px;
+      border-radius: 5px;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    nav a.active::after {
+      opacity: 1;
+    }
+
+    section {
+      padding: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="linz-real-estate-ithaca.jpeg" alt="Logo or Image">
+    <div>
+      <h1>Linz Real Estate - The HouseSOLD Name in Ithaca</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="home.html">Home Page</a>
+    <a href="about.html" class="active">About Me</a>
+    <a href="start.html">Start Here</a>
+    <a href="buyers.html">Buyer's Checklist</a>
+    <a href="leaving.html">Leaving Ithaca</a>
+    <a href="ithaca.html">About Ithaca</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>About Me</h2>
+    <p>As a professional in the Ithaca Real Estate Market since 2004, I have
+      proven to be successful at providing excellent services for my buyers and sellers.
+      I grew up in Ithaca and never fully understood the beauty and value the
+      Ithaca area has to offer. After attending the Ithaca Public Schools, I
+      graduated from Northeastern University with a Bachelors in Political Science.</p>
+    <p>My experience has equipped me with a nuanced understanding of local market
+      dynamics and trends. I take pride in offering tailored, personalized
+      service to meet the specific needs of each client. My goal is to make
+      real estate transactions seamless and successful while contributing to
+      the continued growth of the Ithaca community.</p>
+    <img src="LINZABOUTME.jpeg" alt="Home Page Image">
+    <p>I have lived in Massachusetts, Maine, Colorado and Spain and there is no
+      place that I would rather live than right here in Ithaca!</p>
+  </section>
+  <br><br>
+  <footer>
+    LICENSED REAL ESTATE BROKER | 607-227-7456 | LINZREALESTATE.COM | &copy; 2023 Linz Real Estate. All rights reserved.
+  </footer>
+</body>
+
+</html>
